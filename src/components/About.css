@@ -1,0 +1,48 @@
+.about-section {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, #000000 0%, #0a0a0a 100%);
+  min-height: 400px;
+}
+
+/* Contenedor de billetes */
+.money-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* Billetes individuales */
+.money {
+  position: absolute;
+  top: -100px;
+  width: 80px;
+  opacity: 0.8;
+  animation: fall linear infinite;
+}
+
+/* Animación de caída */
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+  }
+}
+
+/* Generar billetes con diferentes posiciones, tamaños y velocidades */
+.money-0 { left: 5%;  animation-duration: 7s;  animation-delay: 0s; }
+.money-1 { left: 15%; animation-duration: 9s;  animation-delay: 2s; width: 60px; }
+.money-2 { left: 25%; animation-duration: 11s; animation-delay: 4s; width: 100px; }
+.money-3 { left: 35%; animation-duration: 8s;  animation-delay: 1s; width: 90px; }
+.money-4 { left: 50%; animation-duration: 10s; animation-delay: 3s; width: 70px; }
+.money-5 { left: 65%; animation-duration: 12s; animation-delay: 0s; width: 80px; }
+.money-6 { left: 75%; animation-duration: 9s;  animation-delay: 5s; width: 100px; }
+.money-7 { left: 85%; animation-duration: 7s;  animation-delay: 2s; width: 90px; }
+.money-8 { left: 40%; animation-duration: 13s; animation-delay: 4s; width: 110px; }
+.money-9 { left: 60%; animation-duration: 8s;  animation-delay: 1s; width: 70px; }

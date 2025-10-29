@@ -11,7 +11,7 @@ const Projects = () => {
     <section id="projects" className="bg-gray-100 py-20 px-4">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl font-bold mb-8 text-blue-600">Proyectos</h2>
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-3 text-black gap-6">
           {projects.map((p, i) => (
             <div key={i} className="bg-white p-6 rounded-lg shadow hover:shadow-xl transition">
               <h3 className="text-xl font-semibold mb-2">{p.title}</h3>
